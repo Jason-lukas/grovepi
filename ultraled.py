@@ -1,8 +1,14 @@
 #!/usr/bin/env python
 
-# ustawia janosc leda w zaleznosci od odczytu z sonara
-
 from grovepi import *
 
 led = 2
 sonar = 4
+
+while True:
+    try:
+        dist = ultrasonicRead(sonar)
+        print dist
+    except KeyboardInterrupt:
+        print "koniec"
+        break
