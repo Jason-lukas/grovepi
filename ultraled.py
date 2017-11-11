@@ -2,7 +2,7 @@
 
 from grovepi import *
 
-led = 5
+led = 5  # Musi byc wpiete w 5 albo 6 zeby dzialala dokladnie jasnosc
 sonar = 4
 max_dist = float(30)
 
